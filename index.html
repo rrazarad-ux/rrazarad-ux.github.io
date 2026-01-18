@@ -63,6 +63,35 @@ p {
   display: block;
   margin: 0 auto;
 }
+   .card {
+  background-color: #f9fafb;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #1e40af;
+}
 </style>
   <h2>איך עובד רכב מעופף?</h2>
 
@@ -89,29 +118,26 @@ p {
 
 
 <body>
+  <div class="card">
 
-  <header class="header">
+    <!-- הלוגו -->
     <img src="logo.png" alt="Zuma logo" class="logo">
-    <h1>Zuma</h1>
-    <p class="tagline">עתיד התחבורה המעופפת</p>
-  </header>
 
-  <main class="container">
-    <h2>איך עובד רכב מעופף?</h2>
+    <h1>אתר חברת Zuma</h1>
 
     <p>
-      רכב מעופף הוא כלי תחבורה חדשני שמשלב בין טכנולוגיה של רכב רגיל לבין עקרונות תעופה.
-      הוא מיועד לנוע גם על הקרקע וגם באוויר בצורה בטוחה ויעילה.
+      שלום, אני רז ארד, מייסד חברת <strong>Zuma</strong>.
+      חברת Zuma מפתחת ומוכרת מכוניות מעופפות מהדור הבא.
     </p>
 
-    <p>
-      במצב נסיעה רגיל, הרכב מתפקד כמו מכונית חשמלית.
-      בעת הצורך נפתחות כנפיים או רוטורים, והרכב ממריא בצורה מבוקרת.
-    </p>
-  </main>
+    <a href="mailto:contact@zuma.com" class="contact-btn">
+      צור קשר
+    </a>
 
+  </div>
 </body>
 </html>
+
 
 
 
