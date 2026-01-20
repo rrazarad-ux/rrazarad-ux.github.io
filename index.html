@@ -122,7 +122,8 @@ p {
 
     <!-- הלוגו -->
     <img src="logo.png" alt="Zuma logo" class="logo">
-
+<button onclick="showEnglish()">EN</button>
+<button onclick="showHebrew()">עברית</button>
     <h1>אתר חברת Zuma</h1>
 
     <p>
@@ -171,9 +172,20 @@ p {
 </div>
 
   </div>
+<script>
+  function showEnglish() {
+    document.getElementById("hebrew").style.display = "none";
+    document.getElementById("english").style.display = "block";
+  }
 
+  function showHebrew() {
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hebrew").style.display = "block";
+  }
+</script>
 </body>
 </html>
+
 
 
 
