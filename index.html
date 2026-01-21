@@ -4,94 +4,63 @@
   <meta charset="UTF-8">
   <title>Zuma</title>
 
- <style>
-body {
-  background-color: #9ca3af; /* אפור כהה יותר */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<style>
+  body {
+    background-color: #d1d5db;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    direction: rtl;
+  }
 
-.container {
-  background-color: #f3f4f6; /* אפור בהיר, לא לבן */
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 40px;
-  text-align: right;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-p {
-  color: #1f2937; /* טקסט כהה יותר */
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 10px 0;
-}
-    color: #374151;
-    font-size: 18px;
-    max-width: 800px;
-    margin: 10px auto;
-    line-height: 1.6;
-
-  
-}
-   .header {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.header h1 {
-  margin: 10px 0 5px 0;
-  font-size: 36px;
-}
-
-.tagline {
-  font-size: 18px;
-  color: #4b5563;
-}
-
-.logo {
-  width: 120px;
-  height: auto;
-  margin-bottom: 10px;
-}
+  .card {
+    background: #f9fafb;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
 
   .logo {
-  width: 80px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-   .card {
-  background-color: #f9fafb;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
+    width: 120px;
+    display: block;
+    margin-bottom: 20px;
+  }
 
-.logo {
-  width: 140px;
-  margin-bottom: 20px;
-}
+  .lang-buttons {
+    margin-bottom: 30px;
+  }
 
-.contact-btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 28px;
-  background-color: #2563eb;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 10px;
-  font-weight: bold;
-}
+  .lang-buttons button {
+    padding: 8px 14px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #111827;
+    color: white;
+  }
 
-.contact-btn:hover {
-  background-color: #1e40af;
-}
+  h1 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #111827;
+  }
+
+  h2 {
+    margin-top: 30px;
+    color: #1f2937;
+  }
+
+  p {
+    color: #374151;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+</style>
+
 </style>
   <div id="hebrew">
   <h2>איך עובד רכב מעופף?</h2>
@@ -210,20 +179,14 @@ p {
     document.getElementById("hebrew").style.display = "block";
   }
 </script>
-  <script>
-  function showEnglish() {
-    document.getElementById("hebrew").style.display = "none";
-    document.getElementById("english").style.display = "block";
-  }
-
-  function showHebrew() {
-    document.getElementById("english").style.display = "none";
-    document.getElementById("hebrew").style.display = "block";
-  }
-</script>
+ <div class="lang-buttons">
+  <button onclick="showHebrew()">עברית</button>
+  <button onclick="showEnglish()">EN</button>
+</div>
 
 </body>
 </html>
+
 
 
 
