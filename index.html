@@ -120,37 +120,71 @@ p {
 
 
 <body>
-  <div class="card">
+ <div id="hebrew">
 
-    <!-- הלוגו -->
-    <img src="logo.png" alt="Zuma logo" class="logo">
-<button onclick="showEnglish()">EN</button>
-<button onclick="showHebrew()">עברית</button>
-    <h1>אתר חברת Zuma</h1>
+  <!-- הלוגו -->
+  <img src="logo.png" alt="Zuma logo" class="logo">
 
-    <p>
-      שלום, אני רז ארד, מייסד חברת <strong>Zuma</strong>.
-      חברת Zuma מפתחת ומוכרת מכוניות מעופפות מהדור הבא.
-    </p>
+  <button onclick="showEnglish()">EN</button>
+  <button onclick="showHebrew()">עברית</button>
 
-    <a href="mailto:contact@zuma.com" class="contact-btn">
-      צור קשר
-    </a>
-    <h2>איך עובד רכב מעופף?</h2>
-    <p>
-רכב מעופף של חברת Zuma משלב בין טכנולוגיית רכב חשמלי למערכת תעופה מתקדמת.
-במצב נסיעה רגיל, הרכב מתפקד כמו מכונית חכמה לכל דבר.
-</p>
+  <h1>אתר חברת Zuma</h1>
 
-<p>
-כאשר נדרש מעבר לטיסה, נפתחות כנפיים ומדחפים חשמליים המאפשרים המראה אנכית,
-בדומה לרחפן מתקדם. המערכת נשלטת על ידי מחשב טיסה אוטונומי שמבטיח יציבות ובטיחות.
-</p>
+  <p>
+    שלום, אני רז ארד, מייסד חברת <strong>Zuma</strong>.
+    חברת Zuma מפתחת ומוכרת מכוניות מעופפות מהדור הבא.
+  </p>
 
-<p>
-המעבר בין נסיעה לטיסה מתבצע בלחיצת כפתור, והרכב מתוכנן לנחות בצורה חלקה
-בשטחים עירוניים ייעודיים, תוך שמירה על שקט וזיהום מינימלי.
-</p>
+  <a href="mailto:contact@zuma.com" class="contact-btn">
+    צור קשר
+  </a>
+
+  <h2>איך עובד רכב מעופף?</h2>
+
+  <p>
+    רכב מעופף של חברת Zuma משלב בין טכנולוגיית רכב חשמלי למערכת תעופה מתקדמת.
+    במצב נסיעה רגיל, הרכב מתפקד כמו מכונית חכמה לכל דבר.
+  </p>
+
+  <p>
+    כאשר נדרש מעבר לטיסה, נפתחות כנפיים ומדחפים חשמליים המאפשרים המראה אנכית,
+    בדומה לרחפן מתקדם.
+  </p>
+
+  <p>
+    המעבר בין נסיעה לטיסה מתבצע בלחיצת כפתור,
+    תוך שמירה על שקט ובטיחות.
+  </p>
+   <div id="english" style="display:none;">
+
+  <img src="logo.png" alt="Zuma logo" class="logo">
+
+  <button onclick="showEnglish()">EN</button>
+  <button onclick="showHebrew()">עברית</button>
+
+  <h1>Zuma Company</h1>
+
+  <p>
+    Hello, my name is Raz Arad, founder of <strong>Zuma</strong>.
+    Zuma develops next-generation flying vehicles.
+  </p>
+
+  <h2>How Does a Flying Car Work?</h2>
+
+  <p>
+    A flying car by Zuma combines advanced electric vehicle technology
+    with an intelligent aviation system.
+  </p>
+
+  <p>
+    When switching to flight mode, wings and electric propellers deploy,
+    enabling vertical takeoff.
+  </p>
+
+</div>
+
+
+</div>
   
 
 
@@ -185,8 +219,21 @@ p {
     document.getElementById("hebrew").style.display = "block";
   }
 </script>
+  <script>
+  function showEnglish() {
+    document.getElementById("hebrew").style.display = "none";
+    document.getElementById("english").style.display = "block";
+  }
+
+  function showHebrew() {
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hebrew").style.display = "block";
+  }
+</script>
+
 </body>
 </html>
+
 
 
 
